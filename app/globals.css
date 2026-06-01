@@ -1,13 +1,44 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  background: black;
   overflow-x: hidden;
+  background: black;
 }
 
 iframe {
   border: none;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #f97316;
+  border-radius: 9999px;
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 0 20px #f97316;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(-25px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 0.3;
+  }
 }

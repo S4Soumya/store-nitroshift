@@ -85,7 +85,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
 
           <a
-            href="https://instagram.com/nitroshift.official"
+            href="https://instagram.com/nitroshift.in"
             target="_blank"
             className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full font-bold text-lg transition duration-300"
           >

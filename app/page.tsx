@@ -4,90 +4,64 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-black text-white">
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-5 py-10">
 
-      {/* YOUTUBE VIDEO BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Logo */}
+      <Image
+        src="/logo.png"
+        alt="NitroShift"
+        width={140}
+        height={140}
+        priority
+        className="mb-4"
+      />
 
-        <iframe
-          className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full h-[56.25vw] min-h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-          src="https://www.youtube.com/embed/4mol469nB9w?autoplay=1&mute=1&loop=1&playlist=4mol469nB9w&controls=0&showinfo=0&rel=0"
-          title="NitroShift Background"
-          allow="autoplay"
-        />
+      {/* Brand */}
+      <h1 className="text-4xl md:text-6xl font-black tracking-[0.2em] text-center">
+        NITROSHIFT
+      </h1>
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/75" />
+      <p className="text-orange-500 font-semibold mt-2 text-center">
+        Ride • Shift • Repeat
+      </p>
 
-        {/* Orange Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black" />
+      {/* Video Card */}
+      <div className="mt-8 w-full max-w-sm rounded-3xl overflow-hidden border border-orange-500 shadow-[0_0_30px_rgba(249,115,22,0.3)]">
 
-      </div>
+        <div className="relative pt-[177.78%]">
 
-      {/* CONTENT */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
-
-        {/* LOGO */}
-        <div className="relative">
-
-          <div className="absolute inset-0 bg-orange-500 blur-[100px] opacity-40" />
-
-          <Image
-            src="/logo.png"
-            alt="NitroShift"
-            width={260}
-            height={260}
-            priority
-            className="relative drop-shadow-[0_0_40px_rgba(249,115,22,0.8)]"
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/4mol469nB9w?autoplay=1&mute=1&loop=1&playlist=4mol469nB9w&controls=0&rel=0"
+            title="NitroShift Reel"
+            allow="autoplay"
           />
 
         </div>
 
-        {/* BRAND */}
-        <h1 className="mt-10 text-5xl md:text-8xl font-black tracking-[0.25em]">
-          NITROSHIFT
-        </h1>
+      </div>
 
-        <p className="mt-4 text-orange-500 text-xl md:text-2xl font-semibold">
-          Ride • Shift • Repeat
-        </p>
+      {/* Coming Soon */}
+      <h2 className="mt-8 text-4xl md:text-5xl font-black text-center">
+        COMING SOON
+      </h2>
 
-        <div className="w-32 h-1 bg-orange-500 rounded-full mt-8" />
+      <p className="mt-4 text-gray-400 text-center max-w-md">
+        Premium biker streetwear built for riders.
+        Exclusive hoodies, oversized tees and limited drops.
+      </p>
 
-        {/* COMING SOON */}
-        <h2 className="mt-10 text-5xl md:text-7xl font-black animate-pulse">
-          COMING SOON
-        </h2>
+      {/* Instagram */}
+      <a
+        href="https://instagram.com/nitroshift.in"
+        target="_blank"
+        className="mt-8 bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full font-bold transition"
+      >
+        Follow @nitroshift.in
+      </a>
 
-        <p className="max-w-2xl mt-6 text-gray-300 text-lg md:text-xl leading-relaxed">
-          Premium biker streetwear inspired by the riding community.
-          Oversized tees, hoodies, exclusive drops, and rider culture.
-        </p>
-
-        {/* BUTTONS */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-12">
-
-          <a
-            href="https://instagram.com/nitroshift.in"
-            target="_blank"
-            className="bg-orange-500 hover:bg-orange-600 transition duration-300 px-8 py-4 rounded-full font-bold text-lg"
-          >
-            Follow Instagram
-          </a>
-
-          <button
-            className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-300 px-8 py-4 rounded-full font-bold text-lg"
-          >
-            Launching Soon
-          </button>
-
-        </div>
-
-        {/* FOOTER */}
-        <div className="absolute bottom-8 text-gray-500 text-sm">
-          © 2026 NitroShift. All Rights Reserved.
-        </div>
-
+      <div className="mt-10 text-gray-600 text-sm text-center">
+        © 2026 NitroShift
       </div>
 
     </main>

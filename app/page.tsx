@@ -70,12 +70,7 @@ export default function Home() {
 
           <div className="relative pt-[177.77%]">
 
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/EGxxMwdHNTY?autoplay=1&mute=1&loop=1&playlist=4mol469nB9w&controls=0&rel=0"
-              title="NitroShift Reel"
-              allow="autoplay"
-            />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EGxxMwdHNTY?si=cEIEshrkIx8u1SCd&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
           </div>
 
